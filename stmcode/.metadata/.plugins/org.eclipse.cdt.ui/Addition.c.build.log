@@ -1,0 +1,10 @@
+12:26:09 **** Incremental Build of configuration Debug for project Addition.c ****
+make -j12 all 
+arm-none-eabi-size  Addition.c.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4836	     92	   1900	   6828	   1aac	Addition.c.elf
+Finished building: default.size.stdout
+ 
+
+12:26:09 Build Finished. 0 errors, 0 warnings. (took 228ms)
+

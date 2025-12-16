@@ -1,0 +1,10 @@
+15:51:16 **** Incremental Build of configuration Debug for project alternateledblink.c ****
+make -j12 all 
+arm-none-eabi-size  alternateledblink.c.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1088	      4	   1564	   2656	    a60	alternateledblink.c.elf
+Finished building: default.size.stdout
+ 
+
+15:51:17 Build Finished. 0 errors, 0 warnings. (took 226ms)
+
