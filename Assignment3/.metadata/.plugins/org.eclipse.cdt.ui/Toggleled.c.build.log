@@ -1,0 +1,10 @@
+10:09:04 **** Incremental Build of configuration Debug for project Toggleled.c ****
+make -j12 all 
+arm-none-eabi-size  Toggleled.c.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1000	      4	   1564	   2568	    a08	Toggleled.c.elf
+Finished building: default.size.stdout
+ 
+
+10:09:04 Build Finished. 0 errors, 0 warnings. (took 396ms)
+
