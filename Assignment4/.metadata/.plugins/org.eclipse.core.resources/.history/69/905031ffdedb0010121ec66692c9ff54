@@ -1,0 +1,36 @@
+/*
+ * my_led.h
+ *
+ *  Created on: Dec 17, 2025
+ *      Author: kiran_z6dopa8
+ */
+#ifndef GPIO_H_
+#define GPIO_H_
+
+
+#define BV(n) (1 << (n))
+
+
+
+void switch_init(void);
+
+int switch_status(void);
+
+int  switch_press_count(void);
+
+int switch_read(void);
+void led_init(void);
+void led_blue_on(void);
+void led_green_on(void);
+void led_off(void);
+
+
+
+
+
+
+#endif /* MY_SWITCH_H_ */
+
+
+
+

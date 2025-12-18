@@ -1,0 +1,10 @@
+12:43:55 **** Incremental Build of configuration Debug for project ledsequence.c ****
+make -j12 all 
+arm-none-eabi-size  ledsequence.c.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1176	      0	   1568	   2744	    ab8	ledsequence.c.elf
+Finished building: default.size.stdout
+ 
+
+12:43:56 Build Finished. 0 errors, 0 warnings. (took 228ms)
+
