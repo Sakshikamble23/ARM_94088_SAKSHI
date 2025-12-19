@@ -1,0 +1,55 @@
+12:52:46 **** Clean-only build of configuration Debug for project interrupttrigger.c ****
+make -j12 clean 
+rm -rf ./Startup/startup_stm32f407vgtx.d ./Startup/startup_stm32f407vgtx.o
+rm -rf ./Src/ext_intr.cyclo ./Src/ext_intr.d ./Src/ext_intr.o ./Src/ext_intr.su ./Src/itm.cyclo ./Src/itm.d ./Src/itm.o ./Src/itm.su ./Src/main.cyclo ./Src/main.d ./Src/main.o ./Src/main.su ./Src/my_led.cyclo ./Src/my_led.d ./Src/my_led.o ./Src/my_led.su ./Src/syscalls.cyclo ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su ./Src/system_stm32f4xx.cyclo ./Src/system_stm32f4xx.d ./Src/system_stm32f4xx.o ./Src/system_stm32f4xx.su
+rm -rf default.size.stdout interrupttrigger.c.elf interrupttrigger.c.list interrupttrigger.c.map
+ 
+12:52:50 **** Build of configuration Debug for project interrupttrigger.c ****
+make -j12 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
+arm-none-eabi-gcc "../Src/ext_intr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/ext_intr.d" -MT"Src/ext_intr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/ext_intr.o"
+arm-none-eabi-gcc "../Src/itm.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/itm.d" -MT"Src/itm.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/itm.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/my_led.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/my_led.d" -MT"Src/my_led.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/my_led.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/system_stm32f4xx.d" -MT"Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/system_stm32f4xx.o"
+../Src/ext_intr.c: In function 'extint_init':
+../Src/ext_intr.c:35:19: warning: implicit declaration of function 'bbBV'; did you mean 'BV'? [-Wimplicit-function-declaration]
+   35 |     EXTI->FTSR |= bbBV(0);
+      |                   ^~~~
+      |                   BV
+arm-none-eabi-gcc -o "interrupttrigger.c.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\sanket mirage\OneDrive\Desktop\Intenshipdata\ARM_94088_SAKSHI\Assignment5\interrupttrigger.c\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="interrupttrigger.c.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Src/ext_intr.o: in function `extint_init':
+C:/Users/sanket mirage/OneDrive/Desktop/Intenshipdata/ARM_94088_SAKSHI/Assignment5/interrupttrigger.c/Debug/../Src/ext_intr.c:35:(.text.extint_init+0x42): undefined reference to `bbBV'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:63: interrupttrigger.c.elf] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+12:52:59 **** Incremental Build of configuration Debug for project interrupttrigger.c ****
+make -j12 all 
+arm-none-eabi-gcc "../Src/ext_intr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/ext_intr.d" -MT"Src/ext_intr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/ext_intr.o"
+arm-none-eabi-gcc -o "interrupttrigger.c.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\sanket mirage\OneDrive\Desktop\Intenshipdata\ARM_94088_SAKSHI\Assignment5\interrupttrigger.c\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="interrupttrigger.c.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: interrupttrigger.c.elf
+ 
+arm-none-eabi-size  interrupttrigger.c.elf 
+arm-none-eabi-objdump -h -S interrupttrigger.c.elf  > "interrupttrigger.c.list"
+   text	   data	    bss	    dec	    hex	filename
+   1404	      4	   1564	   2972	    b9c	interrupttrigger.c.elf
+Finished building: default.size.stdout
+ 
+Finished building: interrupttrigger.c.list
+ 
+12:53:09 **** Incremental Build of configuration Debug for project interrupttrigger.c ****
+make -j12 all 
+arm-none-eabi-size  interrupttrigger.c.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1404	      4	   1564	   2972	    b9c	interrupttrigger.c.elf
+Finished building: default.size.stdout
+ 
+12:53:40 **** Incremental Build of configuration Debug for project interrupttrigger.c ****
+make -j12 all 
+arm-none-eabi-size  interrupttrigger.c.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1404	      4	   1564	   2972	    b9c	interrupttrigger.c.elf
+Finished building: default.size.stdout
+ 

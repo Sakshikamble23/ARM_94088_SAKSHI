@@ -1,472 +1,97 @@
-11:33:51 **** Incremental Build of configuration Debug for project Hello_Wworld.c ****
+09:16:57 **** Clean-only build of configuration Debug for project Led_switch_exti0 ****
+make -j12 clean 
+rm -rf ./Startup/startup_stm32f407vgtx.d ./Startup/startup_stm32f407vgtx.o
+rm -rf ./Src/ext_intr.cyclo ./Src/ext_intr.d ./Src/ext_intr.o ./Src/ext_intr.su ./Src/itm.cyclo ./Src/itm.d ./Src/itm.o ./Src/itm.su ./Src/main.cyclo ./Src/main.d ./Src/main.o ./Src/main.su ./Src/my_led.cyclo ./Src/my_led.d ./Src/my_led.o ./Src/my_led.su ./Src/syscalls.cyclo ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su ./Src/system_stm32f4xx.cyclo ./Src/system_stm32f4xx.d ./Src/system_stm32f4xx.o ./Src/system_stm32f4xx.su
+rm -rf Led_switch_exti0.elf Led_switch_exti0.list Led_switch_exti0.map default.size.stdout
+ 
+09:16:59 **** Build of configuration Debug for project Led_switch_exti0 ****
 make -j12 all 
 arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
-arm-none-eabi-gcc "../Src/itm.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/itm.d" -MT"Src/itm.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/itm.o"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
-arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
-arm-none-eabi-gcc "../Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/system_stm32f4xx.d" -MT"Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/system_stm32f4xx.o"
-arm-none-eabi-gcc -o "Hello_Wworld.c.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\sanket mirage\OneDrive\Desktop\Intenshipdata\ARM_94088_SAKSHI\stmcode\Hello_Wworld.c\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Hello_Wworld.c.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Hello_Wworld.c.elf
+arm-none-eabi-gcc "../Src/ext_intr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O3 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/ext_intr.d" -MT"Src/ext_intr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/ext_intr.o"
+arm-none-eabi-gcc "../Src/itm.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O3 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/itm.d" -MT"Src/itm.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/itm.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O3 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/my_led.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O3 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/my_led.d" -MT"Src/my_led.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/my_led.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O3 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O3 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O3 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/system_stm32f4xx.d" -MT"Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/system_stm32f4xx.o"
+arm-none-eabi-gcc -o "Led_switch_exti0.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\sanket mirage\OneDrive\Desktop\Intenshipdata\IIT-08-A-ARM\Day-5\Led_Switch_EXTI-1\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Led_switch_exti0.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Led_switch_exti0.elf
  
-arm-none-eabi-size  Hello_Wworld.c.elf 
-arm-none-eabi-objdump -h -S Hello_Wworld.c.elf  > "Hello_Wworld.c.list"
+arm-none-eabi-size  Led_switch_exti0.elf 
+arm-none-eabi-objdump -h -S Led_switch_exti0.elf  > "Led_switch_exti0.list"
    text	   data	    bss	    dec	    hex	filename
-   3544	     92	   1900	   5536	   15a0	Hello_Wworld.c.elf
+   1096	      4	   1564	   2664	    a68	Led_switch_exti0.elf
 Finished building: default.size.stdout
  
-Finished building: Hello_Wworld.c.list
+Finished building: Led_switch_exti0.list
  
-11:35:33 **** Incremental Build of configuration Debug for project Hello_Wworld.c ****
+09:17:28 **** Incremental Build of configuration Debug for project Led_switch_exti0 ****
 make -j12 all 
-arm-none-eabi-size  Hello_Wworld.c.elf 
+arm-none-eabi-size  Led_switch_exti0.elf 
    text	   data	    bss	    dec	    hex	filename
-   3544	     92	   1900	   5536	   15a0	Hello_Wworld.c.elf
+   1096	      4	   1564	   2664	    a68	Led_switch_exti0.elf
 Finished building: default.size.stdout
  
-12:03:05 **** Build of configuration Debug for project Addition.c ****
+09:18:03 **** Incremental Build of configuration Debug for project Led_switch_exti0 ****
 make -j12 all 
-arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
-arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
-../Src/main.c:22:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
-   22 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
-      |    ^~~~~~~
-arm-none-eabi-gcc -o "Addition.c.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\sanket mirage\OneDrive\Desktop\Intenshipdata\ARM_94088_SAKSHI\stmcode\Addition.c\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Addition.c.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Addition.c.elf
- 
-arm-none-eabi-size  Addition.c.elf 
-arm-none-eabi-objdump -h -S Addition.c.elf  > "Addition.c.list"
+arm-none-eabi-size  Led_switch_exti0.elf 
    text	   data	    bss	    dec	    hex	filename
-    652	      0	   1568	   2220	    8ac	Addition.c.elf
+   1096	      4	   1564	   2664	    a68	Led_switch_exti0.elf
 Finished building: default.size.stdout
  
-Finished building: Addition.c.list
+09:21:20 **** Incremental Build of configuration Debug for project Led_switch_exti0 ****
+make -j12 all 
+arm-none-eabi-size  Led_switch_exti0.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1096	      4	   1564	   2664	    a68	Led_switch_exti0.elf
+Finished building: default.size.stdout
  
-12:14:03 **** Incremental Build of configuration Debug for project Addition.c ****
+09:21:24 **** Incremental Build of configuration Debug for project Led_switch_exti0 ****
+make -j12 all 
+arm-none-eabi-size  Led_switch_exti0.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1096	      4	   1564	   2664	    a68	Led_switch_exti0.elf
+Finished building: default.size.stdout
+ 
+09:21:44 **** Incremental Build of configuration Debug for project Led_switch_exti0 ****
+make -j12 all 
+arm-none-eabi-size  Led_switch_exti0.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1096	      4	   1564	   2664	    a68	Led_switch_exti0.elf
+Finished building: default.size.stdout
+ 
+09:48:09 **** Build of configuration Debug for project Led_switch_exti0 ****
 make -j12 all 
 arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
-arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
-../Src/main.c: In function 'main':
-../Src/main.c:27:17: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'c'
-   27 |         int a,b c;
-      |                 ^
-../Src/main.c:28:13: error: redeclaration of 'a' with no linkage
-   28 |         int a=5;
-      |             ^
-../Src/main.c:27:13: note: previous declaration of 'a' with type 'int'
-   27 |         int a,b c;
-      |             ^
-../Src/main.c:30:9: error: 'c' undeclared (first use in this function)
-   30 |         c=a+b;
-      |         ^
-../Src/main.c:30:9: note: each undeclared identifier is reported only once for each function it appears in
-../Src/main.c:31:9: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
-   31 |         printf("addition=%d",&c);
-      |         ^~~~~~
-../Src/main.c:20:1: note: include '<stdio.h>' or provide a declaration of 'printf'
-   19 | #include <stdint.h>
-  +++ |+#include <stdio.h>
-   20 | 
-../Src/main.c:31:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
-   31 |         printf("addition=%d",&c);
-      |         ^~~~~~
-../Src/main.c:31:9: note: include '<stdio.h>' or provide a declaration of 'printf'
-make: *** [Src/subdir.mk:25: Src/main.o] Error 1
-make: *** Waiting for unfinished jobs....
-"make -j12 all" terminated with exit code 2. Build might be incomplete.
-12:14:27 **** Incremental Build of configuration Debug for project Addition.c ****
-make -j12 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
-../Src/main.c: In function 'main':
-../Src/main.c:27:17: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'c'
-   27 |         int a,b c;
-      |                 ^
-../Src/main.c:28:13: error: redeclaration of 'a' with no linkage
-   28 |         int a=5;
-      |             ^
-../Src/main.c:27:13: note: previous declaration of 'a' with type 'int'
-   27 |         int a,b c;
-      |             ^
-../Src/main.c:31:9: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
-   31 |         printf("addition=%d",&c);
-      |         ^~~~~~
-../Src/main.c:20:1: note: include '<stdio.h>' or provide a declaration of 'printf'
-   19 | #include <stdint.h>
-  +++ |+#include <stdio.h>
-   20 | 
-../Src/main.c:31:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
-   31 |         printf("addition=%d",&c);
-      |         ^~~~~~
-../Src/main.c:31:9: note: include '<stdio.h>' or provide a declaration of 'printf'
-../Src/main.c:31:27: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
-   31 |         printf("addition=%d",&c);
-      |                          ~^  ~~
-      |                           |  |
-      |                           |  int *
-      |                           int
-      |                          %ls
-make: *** [Src/subdir.mk:25: Src/main.o] Error 1
-"make -j12 all" terminated with exit code 2. Build might be incomplete.
-12:14:39 **** Incremental Build of configuration Debug for project Addition.c ****
-make -j12 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
-../Src/main.c: In function 'main':
-../Src/main.c:28:13: error: redeclaration of 'a' with no linkage
-   28 |         int a=5;
-      |             ^
-../Src/main.c:27:13: note: previous declaration of 'a' with type 'int'
-   27 |         int a,b,c;
-      |             ^
-../Src/main.c:29:13: error: redeclaration of 'b' with no linkage
-   29 |         int b=10;
-      |             ^
-../Src/main.c:27:15: note: previous declaration of 'b' with type 'int'
-   27 |         int a,b,c;
-      |               ^
-../Src/main.c:30:13: error: redeclaration of 'c' with no linkage
-   30 |         int c=a+b;
-      |             ^
-../Src/main.c:27:17: note: previous declaration of 'c' with type 'int'
-   27 |         int a,b,c;
-      |                 ^
-../Src/main.c:31:9: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
-   31 |         printf("addition=%d",&c);
-      |         ^~~~~~
-../Src/main.c:20:1: note: include '<stdio.h>' or provide a declaration of 'printf'
-   19 | #include <stdint.h>
-  +++ |+#include <stdio.h>
-   20 | 
-../Src/main.c:31:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
-   31 |         printf("addition=%d",&c);
-      |         ^~~~~~
-../Src/main.c:31:9: note: include '<stdio.h>' or provide a declaration of 'printf'
-../Src/main.c:31:27: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
-   31 |         printf("addition=%d",&c);
-      |                          ~^  ~~
-      |                           |  |
-      |                           |  int *
-      |                           int
-      |                          %ls
-make: *** [Src/subdir.mk:25: Src/main.o] Error 1
-"make -j12 all" terminated with exit code 2. Build might be incomplete.
-12:15:07 **** Incremental Build of configuration Debug for project Addition.c ****
-make -j12 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
-../Src/main.c: In function 'main':
-../Src/main.c:30:13: error: redeclaration of 'a' with no linkage
-   30 |         int a=5;
-      |             ^
-../Src/main.c:27:13: note: previous declaration of 'a' with type 'int'
-   27 |         int a;
-      |             ^
-../Src/main.c:31:13: error: redeclaration of 'b' with no linkage
-   31 |         int b=10;
-      |             ^
-../Src/main.c:28:13: note: previous declaration of 'b' with type 'int'
-   28 |         int b;
-      |             ^
-../Src/main.c:32:13: error: redeclaration of 'c' with no linkage
-   32 |         int c=a+b;
-      |             ^
-../Src/main.c:29:13: note: previous declaration of 'c' with type 'int'
-   29 |         int c;
-      |             ^
-../Src/main.c:33:9: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
-   33 |         printf("addition=%d",&c);
-      |         ^~~~~~
-../Src/main.c:20:1: note: include '<stdio.h>' or provide a declaration of 'printf'
-   19 | #include <stdint.h>
-  +++ |+#include <stdio.h>
-   20 | 
-../Src/main.c:33:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
-   33 |         printf("addition=%d",&c);
-      |         ^~~~~~
-../Src/main.c:33:9: note: include '<stdio.h>' or provide a declaration of 'printf'
-../Src/main.c:33:27: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
-   33 |         printf("addition=%d",&c);
-      |                          ~^  ~~
-      |                           |  |
-      |                           |  int *
-      |                           int
-      |                          %ls
-make: *** [Src/subdir.mk:25: Src/main.o] Error 1
-"make -j12 all" terminated with exit code 2. Build might be incomplete.
-12:15:48 **** Incremental Build of configuration Debug for project Addition.c ****
-make -j12 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
-../Src/main.c: In function 'main':
-../Src/main.c:28:13: error: redeclaration of 'a' with no linkage
-   28 |         int a=5;
-      |             ^
-../Src/main.c:27:13: note: previous declaration of 'a' with type 'int'
-   27 |         int a, b ,c;
-      |             ^
-../Src/main.c:29:13: error: redeclaration of 'b' with no linkage
-   29 |         int b=10;
-      |             ^
-../Src/main.c:27:16: note: previous declaration of 'b' with type 'int'
-   27 |         int a, b ,c;
-      |                ^
-../Src/main.c:30:13: error: redeclaration of 'c' with no linkage
-   30 |         int c=a+b;
-      |             ^
-../Src/main.c:27:19: note: previous declaration of 'c' with type 'int'
-   27 |         int a, b ,c;
-      |                   ^
-../Src/main.c:31:9: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
-   31 |         printf("addition=%d",&c);
-      |         ^~~~~~
-../Src/main.c:20:1: note: include '<stdio.h>' or provide a declaration of 'printf'
-   19 | #include <stdint.h>
-  +++ |+#include <stdio.h>
-   20 | 
-../Src/main.c:31:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
-   31 |         printf("addition=%d",&c);
-      |         ^~~~~~
-../Src/main.c:31:9: note: include '<stdio.h>' or provide a declaration of 'printf'
-../Src/main.c:31:27: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
-   31 |         printf("addition=%d",&c);
-      |                          ~^  ~~
-      |                           |  |
-      |                           |  int *
-      |                           int
-      |                          %ls
-make: *** [Src/subdir.mk:25: Src/main.o] Error 1
-"make -j12 all" terminated with exit code 2. Build might be incomplete.
-12:16:18 **** Incremental Build of configuration Debug for project Addition.c ****
-make -j12 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
-../Src/main.c: In function 'main':
-../Src/main.c:31:9: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
-   31 |         printf("addition=%d",&c);
-      |         ^~~~~~
-../Src/main.c:20:1: note: include '<stdio.h>' or provide a declaration of 'printf'
-   19 | #include <stdint.h>
-  +++ |+#include <stdio.h>
-   20 | 
-../Src/main.c:31:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
-   31 |         printf("addition=%d",&c);
-      |         ^~~~~~
-../Src/main.c:31:9: note: include '<stdio.h>' or provide a declaration of 'printf'
-../Src/main.c:31:27: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
-   31 |         printf("addition=%d",&c);
-      |                          ~^  ~~
-      |                           |  |
-      |                           |  int *
-      |                           int
-      |                          %ls
-arm-none-eabi-gcc -o "Addition.c.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\sanket mirage\OneDrive\Desktop\Intenshipdata\ARM_94088_SAKSHI\stmcode\Addition.c\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Addition.c.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Addition.c.elf
+arm-none-eabi-gcc "../Src/ext_intr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O3 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/ext_intr.d" -MT"Src/ext_intr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/ext_intr.o"
+arm-none-eabi-gcc "../Src/itm.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O3 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/itm.d" -MT"Src/itm.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/itm.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O3 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/my_led.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O3 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/my_led.d" -MT"Src/my_led.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/my_led.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O3 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O3 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O3 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/system_stm32f4xx.d" -MT"Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/system_stm32f4xx.o"
+arm-none-eabi-gcc -o "Led_switch_exti0.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\sanket mirage\OneDrive\Desktop\Intenshipdata\IIT-08-A-ARM\Day-5\Led_Switch_EXTI_Volatile-2\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Led_switch_exti0.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Led_switch_exti0.elf
  
-arm-none-eabi-size  Addition.c.elf 
-arm-none-eabi-objdump -h -S Addition.c.elf  > "Addition.c.list"
+arm-none-eabi-size  Led_switch_exti0.elf 
+arm-none-eabi-objdump -h -S Led_switch_exti0.elf  > "Led_switch_exti0.list"
    text	   data	    bss	    dec	    hex	filename
-   4836	     92	   1900	   6828	   1aac	Addition.c.elf
+   1048	      4	   1572	   2624	    a40	Led_switch_exti0.elf
 Finished building: default.size.stdout
  
-Finished building: Addition.c.list
+Finished building: Led_switch_exti0.list
  
-12:19:38 **** Incremental Build of configuration Debug for project Addition.c ****
+09:48:35 **** Incremental Build of configuration Debug for project Led_switch_exti0 ****
 make -j12 all 
-arm-none-eabi-size  Addition.c.elf 
+arm-none-eabi-size  Led_switch_exti0.elf 
    text	   data	    bss	    dec	    hex	filename
-   4836	     92	   1900	   6828	   1aac	Addition.c.elf
+   1048	      4	   1572	   2624	    a40	Led_switch_exti0.elf
 Finished building: default.size.stdout
  
-12:26:09 **** Incremental Build of configuration Debug for project Addition.c ****
+09:48:53 **** Incremental Build of configuration Debug for project Led_switch_exti0 ****
 make -j12 all 
-arm-none-eabi-size  Addition.c.elf 
+arm-none-eabi-size  Led_switch_exti0.elf 
    text	   data	    bss	    dec	    hex	filename
-   4836	     92	   1900	   6828	   1aac	Addition.c.elf
-Finished building: default.size.stdout
- 
-12:42:29 **** Build of configuration Debug for project Binary.c ****
-make -j12 all 
-arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
-arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
-../Src/main.c:22:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
-   22 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
-      |    ^~~~~~~
-arm-none-eabi-gcc -o "Binary.c.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\sanket mirage\OneDrive\Desktop\Intenshipdata\ARM_94088_SAKSHI\stmcode\Binary.c\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Binary.c.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Binary.c.elf
- 
-arm-none-eabi-size  Binary.c.elf 
-arm-none-eabi-objdump -h -S Binary.c.elf  > "Binary.c.list"
-   text	   data	    bss	    dec	    hex	filename
-   8300	     92	   1900	  10292	   2834	Binary.c.elf
-Finished building: default.size.stdout
- 
-Finished building: Binary.c.list
- 
-12:42:52 **** Incremental Build of configuration Debug for project Binary.c ****
-make -j12 all 
-arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
-arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
-arm-none-eabi-gcc -o "Binary.c.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\sanket mirage\OneDrive\Desktop\Intenshipdata\ARM_94088_SAKSHI\stmcode\Binary.c\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Binary.c.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Binary.c.elf
- 
-arm-none-eabi-size  Binary.c.elf 
-arm-none-eabi-objdump -h -S Binary.c.elf  > "Binary.c.list"
-   text	   data	    bss	    dec	    hex	filename
-   8280	     92	   1900	  10272	   2820	Binary.c.elf
-Finished building: default.size.stdout
- 
-Finished building: Binary.c.list
- 
-12:47:11 **** Incremental Build of configuration Debug for project Binary.c ****
-make -j12 all 
-arm-none-eabi-size  Binary.c.elf 
-   text	   data	    bss	    dec	    hex	filename
-   8280	     92	   1900	  10272	   2820	Binary.c.elf
-Finished building: default.size.stdout
- 
-12:47:45 **** Incremental Build of configuration Debug for project Binary.c ****
-make -j12 all 
-arm-none-eabi-size  Binary.c.elf 
-   text	   data	    bss	    dec	    hex	filename
-   8280	     92	   1900	  10272	   2820	Binary.c.elf
-Finished building: default.size.stdout
- 
-12:50:19 **** Incremental Build of configuration Debug for project Binary.c ****
-make -j12 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "Binary.c.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\sanket mirage\OneDrive\Desktop\Intenshipdata\ARM_94088_SAKSHI\stmcode\Binary.c\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Binary.c.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Binary.c.elf
- 
-arm-none-eabi-size  Binary.c.elf 
-arm-none-eabi-objdump -h -S Binary.c.elf  > "Binary.c.list"
-   text	   data	    bss	    dec	    hex	filename
-   5016	     92	   1900	   7008	   1b60	Binary.c.elf
-Finished building: default.size.stdout
- 
-Finished building: Binary.c.list
- 
-12:52:15 **** Incremental Build of configuration Debug for project Binary.c ****
-make -j12 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
-../Src/main.c: In function 'main':
-../Src/main.c:45:8: warning: too many arguments for format [-Wformat-extra-args]
-   45 | printf("Binary = ",&n);
-      |        ^~~~~~~~~~~
-arm-none-eabi-gcc -o "Binary.c.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\sanket mirage\OneDrive\Desktop\Intenshipdata\ARM_94088_SAKSHI\stmcode\Binary.c\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Binary.c.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Binary.c.elf
- 
-arm-none-eabi-size  Binary.c.elf 
-arm-none-eabi-objdump -h -S Binary.c.elf  > "Binary.c.list"
-   text	   data	    bss	    dec	    hex	filename
-   5024	     92	   1900	   7016	   1b68	Binary.c.elf
-Finished building: default.size.stdout
- 
-Finished building: Binary.c.list
- 
-12:52:31 **** Incremental Build of configuration Debug for project Binary.c ****
-make -j12 all 
-arm-none-eabi-size  Binary.c.elf 
-   text	   data	    bss	    dec	    hex	filename
-   5024	     92	   1900	   7016	   1b68	Binary.c.elf
-Finished building: default.size.stdout
- 
-13:02:00 **** Build of configuration Debug for project Binary.c ****
-make -j12 all 
-arm-none-eabi-size  Binary.c.elf 
-   text	   data	    bss	    dec	    hex	filename
-   5024	     92	   1900	   7016	   1b68	Binary.c.elf
-Finished building: default.size.stdout
- 
-13:02:01 **** Build of configuration Debug for project led_GPIO.C ****
-make -j12 all 
-arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
-arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
-../Src/main.c:22:2: error: invalid preprocessing directive #degine; did you mean #define?
-   22 | #degine BV(n)
-      |  ^~~~~~
-      |  define
-../Src/main.c:25:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
-   25 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
-      |    ^~~~~~~
-../Src/main.c: In function 'led_init':
-../Src/main.c:29:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'void'
-   29 | void led_off(void;)
-      | ^~~~
-../Src/main.c:29:19: error: expected declaration specifiers before ')' token
-   29 | void led_off(void;)
-      |                   ^
-../Src/main.c:33:15: error: unterminated comment
-   33 |     led_init()/* ;
-      |               ^
-make: *** [Src/subdir.mk:25: Src/main.o] Error 1
-make: *** Waiting for unfinished jobs....
-"make -j12 all" terminated with exit code 2. Build might be incomplete.
-13:02:35 **** Incremental Build of configuration Debug for project Binary.c ****
-make -j12 all 
-arm-none-eabi-size  Binary.c.elf 
-   text	   data	    bss	    dec	    hex	filename
-   5024	     92	   1900	   7016	   1b68	Binary.c.elf
-Finished building: default.size.stdout
- 
-13:03:07 **** Incremental Build of configuration Debug for project Binary.c ****
-make -j12 all 
-arm-none-eabi-size  Binary.c.elf 
-   text	   data	    bss	    dec	    hex	filename
-   5024	     92	   1900	   7016	   1b68	Binary.c.elf
-Finished building: default.size.stdout
- 
-13:05:12 **** Incremental Build of configuration Debug for project Binary.c ****
-make -j12 all 
-arm-none-eabi-size  Binary.c.elf 
-   text	   data	    bss	    dec	    hex	filename
-   5024	     92	   1900	   7016	   1b68	Binary.c.elf
-Finished building: default.size.stdout
- 
-13:05:37 **** Incremental Build of configuration Debug for project Binary.c ****
-make -j12 all 
-arm-none-eabi-size  Binary.c.elf 
-   text	   data	    bss	    dec	    hex	filename
-   5024	     92	   1900	   7016	   1b68	Binary.c.elf
-Finished building: default.size.stdout
- 
-14:29:17 **** Build of configuration Debug for project Binary.c ****
-make -j12 all 
-arm-none-eabi-size  Binary.c.elf 
-   text	   data	    bss	    dec	    hex	filename
-   5024	     92	   1900	   7016	   1b68	Binary.c.elf
-Finished building: default.size.stdout
- 
-14:29:42 **** Incremental Build of configuration Debug for project Binary.c ****
-make -j12 all 
-arm-none-eabi-size  Binary.c.elf 
-   text	   data	    bss	    dec	    hex	filename
-   5024	     92	   1900	   7016	   1b68	Binary.c.elf
-Finished building: default.size.stdout
- 
-14:29:42 **** Incremental Build of configuration Debug for project Binary.c ****
-make -j12 all 
-arm-none-eabi-size  Binary.c.elf 
-   text	   data	    bss	    dec	    hex	filename
-   5024	     92	   1900	   7016	   1b68	Binary.c.elf
-Finished building: default.size.stdout
- 
-14:30:24 **** Incremental Build of configuration Debug for project Binary.c ****
-make -j12 all 
-arm-none-eabi-size  Binary.c.elf 
-   text	   data	    bss	    dec	    hex	filename
-   5024	     92	   1900	   7016	   1b68	Binary.c.elf
-Finished building: default.size.stdout
- 
-14:31:06 **** Incremental Build of configuration Debug for project Binary.c ****
-make -j12 all 
-arm-none-eabi-size  Binary.c.elf 
-   text	   data	    bss	    dec	    hex	filename
-   5024	     92	   1900	   7016	   1b68	Binary.c.elf
+   1048	      4	   1572	   2624	    a40	Led_switch_exti0.elf
 Finished building: default.size.stdout
  
