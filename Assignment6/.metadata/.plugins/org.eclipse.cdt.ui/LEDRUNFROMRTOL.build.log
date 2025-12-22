@@ -1,0 +1,10 @@
+12:05:41 **** Incremental Build of configuration Debug for project LEDRUNFROMRTOL ****
+make -j12 all 
+arm-none-eabi-size  LEDRUNFROMRTOL.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6072	     12	   1572	   7656	   1de8	LEDRUNFROMRTOL.elf
+Finished building: default.size.stdout
+ 
+
+12:05:41 Build Finished. 0 errors, 0 warnings. (took 322ms)
+

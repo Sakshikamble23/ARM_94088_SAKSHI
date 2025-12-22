@@ -1,0 +1,10 @@
+12:08:53 **** Incremental Build of configuration Debug for project LEDRUNLTOR ****
+make -j12 all 
+arm-none-eabi-size  LEDRUNLTOR.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6072	     12	   1572	   7656	   1de8	LEDRUNLTOR.elf
+Finished building: default.size.stdout
+ 
+
+12:08:53 Build Finished. 0 errors, 0 warnings. (took 346ms)
+
