@@ -1,4 +1,4 @@
-12:05:41 **** Incremental Build of configuration Debug for project LEDRUNFROMRTOL ****
+08:19:49 **** Build of configuration Debug for project LEDRUNFROMRTOL ****
 make -j12 all 
 arm-none-eabi-size  LEDRUNFROMRTOL.elf 
    text	   data	    bss	    dec	    hex	filename
@@ -6,5 +6,5 @@ arm-none-eabi-size  LEDRUNFROMRTOL.elf
 Finished building: default.size.stdout
  
 
-12:05:41 Build Finished. 0 errors, 0 warnings. (took 322ms)
+08:19:49 Build Finished. 0 errors, 0 warnings. (took 314ms)
 
