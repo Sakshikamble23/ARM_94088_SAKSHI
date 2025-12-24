@@ -1,0 +1,10 @@
+12:55:23 **** Incremental Build of configuration Debug for project INTERRUTTRIGGER_EDGESELEC ****
+make -j12 all 
+arm-none-eabi-size  INTERRUTTRIGGER_EDGESELEC.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6268	     16	   1568	   7852	   1eac	INTERRUTTRIGGER_EDGESELEC.elf
+Finished building: default.size.stdout
+ 
+
+12:55:23 Build Finished. 0 errors, 0 warnings. (took 401ms)
+

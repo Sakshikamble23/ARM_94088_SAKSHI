@@ -1,9 +1,14 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:HAL_LED Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:HAL_LED
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Externalinterrupt_EXTINTR Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:HAL_LED Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:HAL_LED,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:HAL_SWITCH Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:HAL_USART2 Debug
 eclipse.preferences.version=1
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Externalinterrupt_EXTINTR\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Externalinterrupt_EXTINTR\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:HAL_LED\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:HAL_LED\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:HAL_LED/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:HAL_LED/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:HAL_SWITCH\ Debug/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:HAL_LED\ Debug/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:HAL_LED\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
