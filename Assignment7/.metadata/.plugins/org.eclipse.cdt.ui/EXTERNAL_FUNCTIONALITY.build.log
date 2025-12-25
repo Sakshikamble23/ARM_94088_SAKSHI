@@ -1,0 +1,10 @@
+10:23:01 **** Incremental Build of configuration Debug for project EXTERNAL_FUNCTIONALITY ****
+make -j12 all 
+arm-none-eabi-size  EXTERNAL_FUNCTIONALITY.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6100	     12	   1572	   7684	   1e04	EXTERNAL_FUNCTIONALITY.elf
+Finished building: default.size.stdout
+ 
+
+10:23:02 Build Finished. 0 errors, 0 warnings. (took 329ms)
+
