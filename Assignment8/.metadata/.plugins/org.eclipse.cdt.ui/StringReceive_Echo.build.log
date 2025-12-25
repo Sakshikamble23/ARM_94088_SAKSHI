@@ -1,0 +1,10 @@
+09:08:42 **** Incremental Build of configuration Debug for project StringReceive_Echo ****
+make -j12 all 
+arm-none-eabi-size  StringReceive_Echo.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9220	     12	   1748	  10980	   2ae4	StringReceive_Echo.elf
+Finished building: default.size.stdout
+ 
+
+09:08:43 Build Finished. 0 errors, 0 warnings. (took 326ms)
+

@@ -1,0 +1,10 @@
+09:54:07 **** Incremental Build of configuration Debug for project String_processing ****
+make -j12 all 
+arm-none-eabi-size  String_processing.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12000	     92	   2084	  14176	   3760	String_processing.elf
+Finished building: default.size.stdout
+ 
+
+09:54:07 Build Finished. 0 errors, 0 warnings. (took 325ms)
+

@@ -1,0 +1,39 @@
+!SESSION 2025-12-25 08:22:29.927 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-12-25 08:23:09.562
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-12-25 08:23:09.568
+!MESSAGE Log4j2 initialized with config file C:\Users\sanket mirage\OneDrive\Desktop\Intenshipdata\ARM_94088_SAKSHI\Assignment8\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-12-25 08:23:13.976
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-12-25 08:27:31.661
+!MESSAGE Indexed 'StringReceive_Echo' (19 sources, 81 headers) in 3.49 sec: 4,442 declarations; 18,507 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0087%)
+
+!ENTRY org.eclipse.debug.core 4 5012 2025-12-25 08:59:11.265
+!MESSAGE Launch configuration StringReceive_Echo Debug at file:/C:/Users/sanket%20mirage/OneDrive/Desktop/Intenshipdata/ARM_94088_SAKSHI/Assignment8/StringReceive_Echo/StringReceive_Echo%20Debug.launch does not exist.
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-12-25 09:04:09.709
+!MESSAGE Indexed 'CommandBased_LEDControl' (19 sources, 81 headers) in 2.17 sec: 4,442 declarations; 18,507 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0087%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-12-25 09:21:03.538
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 3 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-12-25 09:21:03.541
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-12-25 09:21:03.545
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 3 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-12-25 09:21:03.546
+!MESSAGE Existing sessions are:
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-12-25 09:47:11.285
+!MESSAGE Indexed 'String_processing' (19 sources, 81 headers) in 3.18 sec: 4,442 declarations; 18,507 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0087%)
