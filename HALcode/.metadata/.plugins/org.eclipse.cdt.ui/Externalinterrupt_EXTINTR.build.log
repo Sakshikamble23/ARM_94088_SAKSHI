@@ -1,4 +1,4 @@
-10:04:33 **** Incremental Build of configuration Debug for project Externalinterrupt_EXTINTR ****
+10:23:57 **** Build of configuration Debug for project Externalinterrupt_EXTINTR ****
 make -j12 all 
 arm-none-eabi-size  Externalinterrupt_EXTINTR.elf 
    text	   data	    bss	    dec	    hex	filename
@@ -6,5 +6,5 @@ arm-none-eabi-size  Externalinterrupt_EXTINTR.elf
 Finished building: default.size.stdout
  
 
-10:04:34 Build Finished. 0 errors, 0 warnings. (took 371ms)
+10:23:57 Build Finished. 0 errors, 0 warnings. (took 342ms)
 
