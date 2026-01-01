@@ -1,0 +1,48 @@
+/*
+ * mq2.c
+ *
+ *  Created on: Dec 31, 2025
+ *      Author: sanket mirage
+ */
+
+#include "mq2.h"
+
+/* Local ADC handle */
+static ADC_HandleTypeDef *mq2_adc;
+
+/* Initialize MQ2 with ADC handle */
+void MQ2_Init(ADC_HandleTypeDef *hadc)
+{
+    mq2_adc = hadc;
+}
+
+/* Read ADC value from MQ2 */
+uint32_t MQ2_ReadADC(void)
+{
+    uint32_t value = 0;
+
+    HAL_ADC_Start(mq2_adc);
+    HAL_ADC_PollForConversion(mq2_adc, HAL_MAX_DELAY);
+    value = HAL_ADC_GetValue(mq2_adc);
+    HAL_ADC_Stop(mq2_adc);
+
+    return value;
+}
+
+/* Decide air quality based on ADC value */
+AirQuality_t MQ2_GetAirQuality(uint32_t adc_value)
+{
+    if (adc_value < 1200)
+    {
+        return AIR_GOOD;
+    }
+    else if (adc_value < 2500)
+    {
+        return AIR_MODERATE;
+    }
+    else
+    {
+        return AIR_BAD;
+    }
+}
+

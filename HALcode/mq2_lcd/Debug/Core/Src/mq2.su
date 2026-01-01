@@ -1,0 +1,3 @@
+../Core/Src/mq2.c:18:6:MQ2_Init	16	static
+../Core/Src/mq2.c:24:10:MQ2_ReadADC	16	static
+../Core/Src/mq2.c:37:14:MQ2_GetAirQuality	32	static

@@ -1,0 +1,9 @@
+../Core/Src/my_led.c:10:6:led_init	1
+../Core/Src/my_led.c:30:6:led_on1	1
+../Core/Src/my_led.c:35:6:led_off1	1
+../Core/Src/my_led.c:41:6:led_on2	1
+../Core/Src/my_led.c:46:6:led_off2	1
+../Core/Src/my_led.c:52:6:led_on3	1
+../Core/Src/my_led.c:57:6:led_off3	1
+../Core/Src/my_led.c:63:6:led_on4	1
+../Core/Src/my_led.c:68:6:led_off4	1
